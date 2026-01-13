@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="calc-styles.css" rel="stylesheet" />
+  </head>
+  <body style="background-color: hsl(16, 93%, 53%);">
+    <div id="top">
+      <h1 style="color: #0a0a0a; text-align: center; padding-top: 40px">
+        Calculator
+      </h1>
+      <input type="text" id="display"/>
+      <div id="num">
+        <div id="num">
+            <button onclick="cleardisplay()" id="btn">AC</button>
+            <button onclick="displayval('%')" id="btn">%</button>
+            <button onclick="displayval(x)" id="btn">x</button>
+            <button onclick="displayval('/')" id="btn">/</button>
+          </div>
+        <div id="num">
+          <button onclick="displayval(7)" id="btn">7</button>
+          <button onclick="displayval(8)" id="btn">8</button>
+          <button onclick="displayval(9)" id="btn">9</button>
+          <button onclick="displayval('*')" id="btn">*</button>
+        </div>
+        <div id="num">
+          <button onclick="displayval(4)" id="btn">4</button>
+          <button onclick="displayval(5)" id="btn">5</button>
+          <button onclick="displayval(6)" id="btn">6</button>
+          <button onclick="displayval('-')" id="btn">-</button>
+        </div>
+        <div id="num">
+          <button onclick="displayval(1)" id="btn">1</button>
+          <button onclick="displayval(2)" id="btn">2</button>
+          <button onclick="displayval(3)" id="btn">3</button>
+          <button onclick="displayval('+')" id="btn">+</button>
+        </div>
+        <div id="num1">
+          <button onclick="displayval('00')" id="btn">00</button>
+          <button onclick="displayval(0)" id="btn">0</button>
+          <button onclick="displayval('.')" id="btn">.</button>
+          <button onclick="calculate()" id="btn">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="calc-js.js"></script>
+  </body>
+</html>
